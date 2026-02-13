@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace APIPSI16.Filters
@@ -30,9 +33,25 @@ namespace APIPSI16.Filters
             // Clear existing parameters for file upload
             operation.Parameters?.Clear();
 
+            // Build schema properties from actual form file parameters
+            var properties = new Dictionary<string, OpenApiSchema>();
+            var requiredFields = new HashSet<string>();
+
+            foreach (var fileParam in formFileParams)
+            {
+                properties[fileParam.Name] = new OpenApiSchema
+                {
+                    Type = "string",
+                    Format = "binary",
+                    Description = $"The {fileParam.Name} to upload"
+                };
+                requiredFields.Add(fileParam.Name);
+            }
+
             // Set up request body for multipart/form-data
             operation.RequestBody = new OpenApiRequestBody
             {
+                Required = true,
                 Content = new Dictionary<string, OpenApiMediaType>
                 {
                     ["multipart/form-data"] = new OpenApiMediaType
@@ -40,16 +59,8 @@ namespace APIPSI16.Filters
                         Schema = new OpenApiSchema
                         {
                             Type = "object",
-                            Properties = new Dictionary<string, OpenApiSchema>
-                            {
-                                ["file"] = new OpenApiSchema
-                                {
-                                    Type = "string",
-                                    Format = "binary",
-                                    Description = "The file to upload"
-                                }
-                            },
-                            Required = new HashSet<string> { "file" }
+                            Properties = properties,
+                            Required = requiredFields
                         }
                     }
                 }
