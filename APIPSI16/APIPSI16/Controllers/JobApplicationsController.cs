@@ -41,8 +41,9 @@ namespace APIPSI16.Controllers
                 OpportunityId = dto.OpportunityId,
                 UserId = uid.Value,
                 Status = 0,
+                Stage = 0, // Applied
                 AppliedAt = DateTime.UtcNow,
-                Name = string.IsNullOrWhiteSpace(dto.Name) ? null : dto.Name // assumes JobApplications has Name property
+                Name = string.IsNullOrWhiteSpace(dto.Name) ? null : dto.Name
             };
 
             await _db.JobApplications.AddAsync(app);
@@ -107,6 +108,107 @@ namespace APIPSI16.Controllers
             return Ok(app);
         }
 
+        // POST: api/JobApplications/5/stage
+        // Update application stage with audit trail
+        [HttpPost("{id}/stage")]
+        public async Task<IActionResult> UpdateStage(int id, [FromBody] UpdateStageDTO dto)
+        {
+            var actorId = GetUserId();
+            if (actorId == null) return Unauthorized();
+
+            var app = await _db.JobApplications
+                .Include(a => a.Opportunity)
+                .FirstOrDefaultAsync(a => a.JobApplicationId == id);
+            
+            if (app == null) return NotFound();
+
+            // Verify user is authorized (company member or admin)
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+            if (userRole != "0" && app.Opportunity?.CompanyId.HasValue == true)
+            {
+                var isMember = await _db.CompanyMembers
+                    .AnyAsync(cm => cm.CompanyId == app.Opportunity.CompanyId.Value && cm.UserId == actorId.Value);
+                if (!isMember) return Forbid();
+            }
+
+            var oldStage = app.Stage;
+            app.Stage = dto.NewStage;
+            app.UpdatedAt = DateTime.UtcNow;
+            _db.JobApplications.Update(app);
+
+            // Create audit log
+            await _db.AuditLogs.AddAsync(new AuditLog
+            {
+                UserId = actorId.Value,
+                Action = "UpdateApplicationStage",
+                TargetType = "JobApplication",
+                TargetId = id,
+                Metadata = $"Stage changed from {oldStage} to {dto.NewStage}",
+                CreatedAt = DateTime.UtcNow
+            });
+
+            // Notify applicant
+            await _db.Notifications.AddAsync(new Notification
+            {
+                UserId = app.UserId,
+                ActorUserId = actorId.Value,
+                Type = "ApplicationStageChanged",
+                Payload = $"{{\"applicationId\":{id},\"newStage\":{dto.NewStage}}}",
+                IsRead = false,
+                CreatedAt = DateTime.UtcNow
+            });
+
+            await _db.SaveChangesAsync();
+            return Ok(app);
+        }
+
+        // GET: api/JobApplications/company/5/pipeline
+        // Get all applications for a company grouped by stage
+        [HttpGet("company/{companyId}/pipeline")]
+        [Authorize(Roles = "0,2")]
+        public async Task<IActionResult> GetCompanyPipeline(int companyId)
+        {
+            var actorId = GetUserId();
+            if (actorId == null) return Unauthorized();
+
+            var userRole = User.FindFirst(ClaimTypes.Role)?.Value;
+            if (userRole != "0")
+            {
+                var isMember = await _db.CompanyMembers
+                    .AnyAsync(cm => cm.CompanyId == companyId && cm.UserId == actorId.Value);
+                if (!isMember) return Forbid();
+            }
+
+            var applications = await _db.JobApplications
+                .Include(a => a.Opportunity)
+                .Include(a => a.User)
+                .Where(a => a.Opportunity.CompanyId == companyId)
+                .Select(a => new
+                {
+                    a.JobApplicationId,
+                    a.OpportunityId,
+                    OpportunityTitle = a.Opportunity.Title,
+                    a.UserId,
+                    UserName = a.User.Name,
+                    a.Status,
+                    a.Stage,
+                    a.AppliedAt,
+                    a.UpdatedAt
+                })
+                .ToListAsync();
+
+            var pipeline = applications.GroupBy(a => a.Stage ?? 0)
+                .OrderBy(g => g.Key)
+                .Select(g => new
+                {
+                    Stage = g.Key,
+                    StageName = GetStageName(g.Key),
+                    Applications = g.ToList()
+                });
+
+            return Ok(pipeline);
+        }
+
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> ForUser(int userId)
         {
@@ -125,11 +227,30 @@ namespace APIPSI16.Controllers
             return int.TryParse(sid, out var id) ? id : (int?)null;
         }
 
+        private string GetStageName(byte stage)
+        {
+            return stage switch
+            {
+                0 => "Applied",
+                1 => "Screening",
+                2 => "Interview",
+                3 => "Offer",
+                4 => "Hired",
+                5 => "Rejected",
+                _ => "Unknown"
+            };
+        }
+
         // DTO used by this controller
         public class ApplyDto
         {
             public int OpportunityId { get; set; }
-            public string? Name { get; set; } // optional applicant-provided name (varchar(50))
+            public string? Name { get; set; }
+        }
+
+        public class UpdateStageDTO
+        {
+            public byte NewStage { get; set; }
         }
 
     }

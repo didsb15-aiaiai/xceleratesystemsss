@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIPSI16")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f59c314d8adba1400b10a16e3ae230245061901")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6120fb85be0c6969ff9e3b8b21d474b4ba86aec8")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIPSI16")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIPSI16")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

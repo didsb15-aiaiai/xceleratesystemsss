@@ -53,6 +53,7 @@ builder.Services.AddDbContext<xcleratesystemslinks_SampleDBContext>(options =>
 
 // ---- Controllers & Swagger ----
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -243,6 +244,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<APIPSI16.Hubs.ChatHub>("/hubs/chat");
 
 app.Logger.LogInformation("API is running. Listening on: {Urls}", urls);
 

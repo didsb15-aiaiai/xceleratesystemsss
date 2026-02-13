@@ -173,3 +173,6 @@ C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportun
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/obj/Debug/net8.0/XcelerateLinks.pdb
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/obj/Debug/net8.0/XcelerateLinks.genruntimeconfig.cache
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/obj/Debug/net8.0/ref/XcelerateLinks.dll
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/bin/Debug/net8.0/APIPSI16.staticwebassets.runtime.json
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll

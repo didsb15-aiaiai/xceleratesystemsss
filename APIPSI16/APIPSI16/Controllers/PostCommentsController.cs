@@ -32,6 +32,8 @@ namespace APIPSI16.Controllers
 
             dto.UserId = uid.Value;
             dto.CreatedAt = DateTime.UtcNow;
+            dto.IsModerated = false;
+            dto.IsDeleted = false;
             await _db.PostComments.AddAsync(dto);
             await _db.SaveChangesAsync();
 
@@ -71,15 +73,91 @@ namespace APIPSI16.Controllers
             var c = await _db.PostComments.FindAsync(id);
             if (c == null) return NotFound();
             if (c.UserId != uid && !User.IsInRole("0")) return Forbid();
-            _db.PostComments.Remove(c);
+            
+            // Soft delete
+            c.IsDeleted = true;
+            _db.PostComments.Update(c);
             await _db.SaveChangesAsync();
+            
             return NoContent();
+        }
+
+        // POST: api/PostComments/5/moderate
+        // Moderate a comment (approve/disapprove)
+        [HttpPost("{id}/moderate")]
+        [Authorize(Roles = "0,2")]
+        public async Task<IActionResult> ModerateComment(int id, [FromBody] ModerateCommentDTO dto)
+        {
+            var uid = GetUserId();
+            if (uid == null) return Unauthorized();
+
+            var comment = await _db.PostComments.FindAsync(id);
+            if (comment == null) return NotFound();
+
+            comment.IsModerated = true;
+            comment.ModeratedBy = uid.Value;
+            comment.ModeratedAt = DateTime.UtcNow;
+            
+            if (!dto.Approve)
+            {
+                comment.IsDeleted = true;
+            }
+
+            _db.PostComments.Update(comment);
+
+            // Create audit log
+            await _db.AuditLogs.AddAsync(new AuditLog
+            {
+                UserId = uid.Value,
+                Action = dto.Approve ? "ApproveComment" : "DisapproveComment",
+                TargetType = "PostComment",
+                TargetId = id,
+                Metadata = dto.Reason,
+                CreatedAt = DateTime.UtcNow
+            });
+
+            await _db.SaveChangesAsync();
+            return Ok(comment);
+        }
+
+        // GET: api/PostComments/moderation/pending
+        // Get pending comments for moderation
+        [HttpGet("moderation/pending")]
+        [Authorize(Roles = "0,2")]
+        public async Task<IActionResult> GetPendingModeration([FromQuery] int page = 1, [FromQuery] int pageSize = 20)
+        {
+            var comments = await _db.PostComments
+                .Where(c => !c.IsModerated && !c.IsDeleted)
+                .Include(c => c.User)
+                .Include(c => c.Post)
+                .OrderBy(c => c.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .Select(c => new
+                {
+                    c.CommentId,
+                    c.PostId,
+                    PostTitle = c.Post.Content != null ? c.Post.Content.Substring(0, Math.Min(50, c.Post.Content.Length)) : "",
+                    c.UserId,
+                    UserName = c.User.Name,
+                    c.Content,
+                    c.CreatedAt
+                })
+                .ToListAsync();
+
+            return Ok(comments);
         }
 
         private int? GetUserId()
         {
             var sid = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             return int.TryParse(sid, out var id) ? id : (int?)null;
+        }
+
+        public class ModerateCommentDTO
+        {
+            public bool Approve { get; set; }
+            public string? Reason { get; set; }
         }
     }
 }

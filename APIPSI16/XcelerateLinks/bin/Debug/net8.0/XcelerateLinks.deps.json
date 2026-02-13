@@ -52,6 +52,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Connections/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.WebSockets": "2.2.0",
+          "Newtonsoft.Json": "11.0.2"
+        }
+      },
+      "Microsoft.AspNetCore.SignalR/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Connections": "1.1.0"
+        }
+      },
+      "Microsoft.AspNetCore.WebSockets/2.2.0": {
+        "dependencies": {
+          "System.Net.WebSockets.WebSocketProtocol": "4.5.1"
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -278,6 +294,14 @@
           }
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "6.6.2",
@@ -372,6 +396,14 @@
           }
         }
       },
+      "System.Net.WebSockets.WebSocketProtocol/4.5.1": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Net.WebSockets.WebSocketProtocol.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26606.5"
+          }
+        }
+      },
       "System.Runtime.Caching/6.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.1"
@@ -440,6 +472,7 @@
       "APIPSI16/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.5",
+          "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.EntityFrameworkCore": "8.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -479,6 +512,27 @@
       "sha512": "sha512-VqKkXLxsCVHNmSdUIuBtDSXL3OqX0yfDjcZxCcYD8VFNpTutl53BCFHzMb3wvw3asneHnURzC2R8VvIXn3l5Lw==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.5",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Connections/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZcwAM9rE5yjGC+vtiNAK0INybpKIqnvB+/rntZn2/CPtyiBAtovVrEp4UZOoC31zH5t0P78ix9gLNJzII/ODsA==",
+      "path": "microsoft.aspnetcore.http.connections/1.1.0",
+      "hashPath": "microsoft.aspnetcore.http.connections.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V5X5XkeAHaFyyBOGPrddVeqTNo6zRPJNS5PRhlzEyBXiNG9AtqUbMyWFdZahQyMiIWJau550z59A4kdC9g5I9A==",
+      "path": "microsoft.aspnetcore.signalr/1.1.0",
+      "hashPath": "microsoft.aspnetcore.signalr.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.WebSockets/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZpOcg2V0rCwU9ErfDb9y3Hcjoe7rU42XlmUS0mO4pVZQSgJVqR+DfyZtYd5LDa11F7bFNS2eezI9cBM3CmfGhw==",
+      "path": "microsoft.aspnetcore.websockets/2.2.0",
+      "hashPath": "microsoft.aspnetcore.websockets.2.2.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -606,6 +660,13 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",
       "serviceable": true,
@@ -661,6 +722,13 @@
       "sha512": "sha512-JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
       "path": "system.memory.data/1.0.2",
       "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
+    },
+    "System.Net.WebSockets.WebSocketProtocol/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FquLjdb/0CeMqb15u9Px6TwnyFl306WztKWu6sKKc5kWPYMdpi5BFEkdxzGoieYFp9UksyGwJnCw4KKAUfJjrw==",
+      "path": "system.net.websockets.websocketprotocol/4.5.1",
+      "hashPath": "system.net.websockets.websocketprotocol.4.5.1.nupkg.sha512"
     },
     "System.Runtime.Caching/6.0.0": {
       "type": "package",
