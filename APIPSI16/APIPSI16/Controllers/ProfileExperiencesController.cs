@@ -28,9 +28,7 @@ namespace APIPSI16.Controllers
             if (uid == null) return Unauthorized();
 
             if (exp.UserId != uid && !User.IsInRole("0")) return Forbid();
-            exp.StartDate = exp.StartDate;
-            exp.IsCurrent = exp.IsCurrent;
-            exp.Description = exp.Description;
+            
             await _db.ProfileExperiences.AddAsync(exp);
             await _db.SaveChangesAsync();
             return CreatedAtAction(nameof(ForUser), new { userId = exp.UserId }, exp);

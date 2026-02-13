@@ -240,18 +240,5 @@ namespace APIPSI16.Controllers
                 _ => "Unknown"
             };
         }
-
-        // DTO used by this controller
-        public class ApplyDto
-        {
-            public int OpportunityId { get; set; }
-            public string? Name { get; set; }
-        }
-
-        public class UpdateStageDTO
-        {
-            public byte NewStage { get; set; }
-        }
-
     }
 }
