@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Pipeline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL1BpcGVsaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvTWVzc2FnZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Create.cshtml]
