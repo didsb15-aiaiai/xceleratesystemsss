@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = XcelerateLinks
+build_property.RootNamespace = XcelerateLinks
+build_property.ProjectDir = /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Applications/Pipeline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25zL1BpcGVsaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Chats/Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdHMvTWVzc2FnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFuaWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFuaWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFuaWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFuaWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Companies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFuaWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Home/AdminIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZG1pbkluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Opportunities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdGllcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Opportunities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdGllcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Opportunities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdGllcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Opportunities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdGllcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Opportunities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdGllcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rhrsdyt9hm

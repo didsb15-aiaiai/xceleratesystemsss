@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "APIPSI16\\APIPSI16.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "XcelerateLinks\\XcelerateLinks.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,191 @@
+@model User
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-4">Edit Profile</h2>
+
+            <form asp-action="Edit" method="post" enctype="multipart/form-data" id="profileForm">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="UserId" />
+
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Basic Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Full Name</label>
+                            <input asp-for="Name" class="form-control" required />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" type="email" class="form-control" required />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="DoB" class="form-label">Date of Birth</label>
+                            <input asp-for="DoB" type="date" class="form-control" />
+                            <span asp-validation-for="DoB" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Professional Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label asp-for="Nationality" class="form-label">Nationality</label>
+                            <input asp-for="Nationality" class="form-control" type="number" />
+                            <span asp-validation-for="Nationality" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="JobPreference" class="form-label">Job Preference</label>
+                            <input asp-for="JobPreference" class="form-control" type="number" />
+                            <span asp-validation-for="JobPreference" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ProfileBio" class="form-label">About Me</label>
+                            <textarea asp-for="ProfileBio" class="form-control" rows="5" 
+                                      placeholder="Tell us about yourself, your experience, and your career goals..."></textarea>
+                            <span asp-validation-for="ProfileBio" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle"></i> Save Changes
+                    </button>
+                    <a asp-action="Details" asp-route-id="@Model.UserId" class="btn btn-outline-secondary">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Profile Picture</h5>
+                </div>
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        @if (!string.IsNullOrEmpty(Model.ProfilePictureUrl))
+                        {
+                            <img src="@Model.ProfilePictureUrl" alt="Profile Picture" 
+                                 class="img-fluid rounded-circle mb-3" style="max-width: 200px;" id="profilePicturePreview" />
+                        }
+                        else
+                        {
+                            <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+                                 style="width: 200px; height: 200px; font-size: 72px;" id="profilePicturePreview">
+                                @(Model.Name?.Substring(0, 1).ToUpper() ?? "U")
+                            </div>
+                        }
+                    </div>
+
+                    <form id="uploadPictureForm" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input type="file" class="form-control" id="profilePictureInput" 
+                                   accept="image/jpeg,image/png,image/gif" />
+                            <small class="text-muted">Max 5MB. JPG, PNG, or GIF.</small>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary" id="uploadPictureBtn">
+                            <i class="bi bi-upload"></i> Upload Picture
+                        </button>
+                    </form>
+                    <div id="uploadMessage" class="mt-2"></div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5>Profile Completion</h5>
+                </div>
+                <div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" 
+                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <p class="mt-2 text-muted small">
+                        Complete your profile to improve visibility to recruiters
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('uploadPictureBtn').addEventListener('click', async function() {
+            const fileInput = document.getElementById('profilePictureInput');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Please select a file');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const userId = @Model.UserId;
+            const messageDiv = document.getElementById('uploadMessage');
+            messageDiv.innerHTML = '<div class="spinner-border spinner-border-sm" role="status"></div> Uploading...';
+
+            try {
+                const response = await fetch(`/api/users/${userId}/upload-picture`, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Authorization': 'Bearer ' + localStorage.getItem('token')
+                    }
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    messageDiv.innerHTML = '<div class="alert alert-success">Picture uploaded successfully!</div>';
+                    
+                    // Update preview
+                    const preview = document.getElementById('profilePicturePreview');
+                    if (preview.tagName === 'IMG') {
+                        preview.src = result.fileUrl;
+                    } else {
+                        preview.outerHTML = `<img src="${result.fileUrl}" alt="Profile Picture" 
+                            class="img-fluid rounded-circle mb-3" style="max-width: 200px;" id="profilePicturePreview" />`;
+                    }
+                    
+                    setTimeout(() => messageDiv.innerHTML = '', 3000);
+                } else {
+                    messageDiv.innerHTML = `<div class="alert alert-danger">${result.message}</div>`;
+                }
+            } catch (error) {
+                console.error('Upload error:', error);
+                messageDiv.innerHTML = '<div class="alert alert-danger">Upload failed. Please try again.</div>';
+            }
+        });
+    </script>
+}
+

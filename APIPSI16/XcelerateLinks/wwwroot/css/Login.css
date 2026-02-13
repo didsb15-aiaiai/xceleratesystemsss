@@ -1,0 +1,208 @@
+/* Header / top bar */
+.site-header {
+    background: linear-gradient(180deg, #0b0c0d 0%, #0f1113 100%);
+    color: #fff;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-left {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.brand-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 4px 10px rgba(47,183,166,0.25);
+    margin-right: 8px;
+}
+
+.brand-text {
+    font-size: 1.05rem;
+}
+
+/* Search in header */
+.header-center {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrap {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+    width: 100%;
+    background: rgba(255,255,255,0.02);
+    border-radius: 28px;
+    padding: 6px 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #ddd;
+    padding: 10px 12px;
+    outline: none;
+}
+
+.search-btn {
+    border: none;
+    background: #172027;
+    color: #bbb;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* Right-side buttons */
+.header-right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-filter {
+    background: linear-gradient(180deg,#2f6fd6,#245bb5);
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #2f6fd6;
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.btn-cta {
+    background: #2f6fd6;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* --- login page styles (moved from inline) --- */
+.login-hero.login-centered {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0f1113 0%, #0b0c0d 100%);
+    color: #e6e6e6;
+    padding: 0;
+    gap: 0;
+}
+
+.hero-right {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: #fff;
+    margin: 0 auto;
+}
+
+    .login-card h3 {
+        margin-bottom: 1.2rem;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+.login-btn {
+    background: linear-gradient(180deg,#2f6fd6,#245bb5);
+    box-shadow: 0 6px 18px rgba(47,111,214,0.25);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: .75rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: .7rem;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+    .login-btn:hover {
+        background: linear-gradient(180deg,#2f6fd6,#0094ff);
+    }
+
+.secondary-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.form-control {
+    background: #0b0c0d;
+    border: 1px solid rgba(255,255,255,0.09);
+    color: #eee;
+    padding: .7rem .85rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
+}
+
+    .form-control::placeholder {
+        color: #888;
+    }
+
+
+.form-note {
+    color: #bdbdbd;
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .login-hero {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+}

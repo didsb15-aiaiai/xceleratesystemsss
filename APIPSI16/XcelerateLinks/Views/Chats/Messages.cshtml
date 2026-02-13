@@ -1,0 +1,277 @@
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <!-- Conversations List -->
+        <div class="col-md-4 col-lg-3 border-end" style="max-height: calc(100vh - 100px); overflow-y: auto;">
+            <div class="p-3 border-bottom">
+                <h4>Messages</h4>
+                <div class="input-group input-group-sm mt-2">
+                    <input type="text" class="form-control" placeholder="Search conversations..." id="searchConversations" />
+                </div>
+            </div>
+            
+            <div id="conversationsList" class="list-group list-group-flush">
+                <!-- Conversations will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="col-md-8 col-lg-9 d-flex flex-column" style="max-height: calc(100vh - 100px);">
+            <div id="chatHeader" class="p-3 border-bottom bg-light">
+                <h5 id="chatTitle">Select a conversation</h5>
+                <small class="text-muted" id="chatStatus"></small>
+            </div>
+
+            <!-- Messages Area -->
+            <div id="messagesContainer" class="flex-grow-1 p-3" style="overflow-y: auto; max-height: calc(100vh - 250px);">
+                <div class="text-center text-muted">
+                    <i class="bi bi-chat-dots" style="font-size: 48px;"></i>
+                    <p>Select a conversation to start messaging</p>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typingIndicator" class="px-3 py-1 text-muted small" style="display: none;">
+                <span id="typingUserName"></span> is typing...
+            </div>
+
+            <!-- Message Composer -->
+            <div id="messageComposer" class="p-3 border-top" style="display: none;">
+                <form id="sendMessageForm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="messageInput" 
+                               placeholder="Type a message..." autocomplete="off" />
+                        <button class="btn btn-primary" type="submit" id="sendButton">
+                            <i class="bi bi-send"></i> Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+<script>
+    let connection;
+    let currentChatId = null;
+    let currentUserId = null;
+    let typingTimeout;
+
+    // Initialize SignalR Connection
+    async function initSignalR() {
+        connection = new signalR.HubConnectionBuilder()
+            .withUrl("/hubs/chat", {
+                accessTokenFactory: () => localStorage.getItem('token') || ''
+            })
+            .withAutomaticReconnect()
+            .build();
+
+        connection.on("ReceiveMessage", function (message) {
+            if (message.chatId === currentChatId) {
+                appendMessage(message);
+                scrollToBottom();
+            }
+            // Update conversation list
+            loadConversations();
+        });
+
+        connection.on("UserTyping", function (data) {
+            if (data.isTyping && currentChatId) {
+                document.getElementById('typingIndicator').style.display = 'block';
+                document.getElementById('typingUserName').textContent = data.userName;
+            } else {
+                document.getElementById('typingIndicator').style.display = 'none';
+            }
+        });
+
+        connection.on("MessageRead", function (data) {
+            if (data.chatId === currentChatId) {
+                const messageElement = document.querySelector(`[data-message-id="${data.messageId}"]`);
+                if (messageElement) {
+                    messageElement.querySelector('.read-receipt').textContent = 'Read';
+                }
+            }
+        });
+
+        try {
+            await connection.start();
+            console.log("SignalR Connected");
+        } catch (err) {
+            console.error("SignalR Connection Error:", err);
+        }
+    }
+
+    // Load conversations
+    async function loadConversations() {
+        try {
+            const response = await fetch('/api/chat/conversations', {
+                headers: {
+                    'Authorization': 'Bearer ' + (localStorage.getItem('token') || '')
+                }
+            });
+            
+            const conversations = await response.json();
+            const container = document.getElementById('conversationsList');
+            container.innerHTML = '';
+
+            conversations.forEach(conv => {
+                const item = document.createElement('a');
+                item.href = '#';
+                item.className = 'list-group-item list-group-item-action';
+                item.onclick = (e) => {
+                    e.preventDefault();
+                    openChat(conv.chatId, conv.chatName);
+                };
+
+                const badge = conv.unreadCount > 0 
+                    ? `<span class="badge bg-primary rounded-pill">${conv.unreadCount}</span>` 
+                    : '';
+
+                item.innerHTML = `
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">${conv.chatName || 'Chat'}</h6>
+                        ${badge}
+                    </div>
+                    ${conv.lastMessage ? `<p class="mb-1 text-truncate small">${conv.lastMessage.messageText}</p>` : ''}
+                `;
+                container.appendChild(item);
+            });
+        } catch (error) {
+            console.error('Error loading conversations:', error);
+        }
+    }
+
+    // Open a chat
+    async function openChat(chatId, chatName) {
+        currentChatId = chatId;
+        document.getElementById('chatTitle').textContent = chatName || 'Chat';
+        document.getElementById('messageComposer').style.display = 'block';
+        document.getElementById('messagesContainer').innerHTML = '';
+
+        // Join chat room via SignalR
+        await connection.invoke("JoinChat", chatId);
+
+        // Load messages
+        await loadMessages(chatId);
+    }
+
+    // Load messages
+    async function loadMessages(chatId) {
+        try {
+            const response = await fetch(`/api/chat/${chatId}/messages?page=1&pageSize=50`, {
+                headers: {
+                    'Authorization': 'Bearer ' + (localStorage.getItem('token') || '')
+                }
+            });
+            
+            const messages = await response.json();
+            messages.reverse().forEach(msg => appendMessage(msg));
+            scrollToBottom();
+        } catch (error) {
+            console.error('Error loading messages:', error);
+        }
+    }
+
+    // Append message to UI
+    function appendMessage(message) {
+        const container = document.getElementById('messagesContainer');
+        const isOwn = message.senderUserId === currentUserId;
+        
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `d-flex mb-3 ${isOwn ? 'justify-content-end' : 'justify-content-start'}`;
+        messageDiv.setAttribute('data-message-id', message.messageId);
+        
+        messageDiv.innerHTML = `
+            <div class="${isOwn ? 'bg-primary text-white' : 'bg-light'} rounded p-2" style="max-width: 70%;">
+                ${!isOwn ? `<small class="fw-bold">${message.senderName || 'User'}</small><br/>` : ''}
+                <div>${escapeHtml(message.messageText)}</div>
+                <small class="text-muted d-block">
+                    ${new Date(message.createdAt).toLocaleTimeString()}
+                    ${isOwn && message.readAt ? '<span class="read-receipt">Read</span>' : ''}
+                </small>
+            </div>
+        `;
+        
+        container.appendChild(messageDiv);
+    }
+
+    // Send message
+    document.getElementById('sendMessageForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const input = document.getElementById('messageInput');
+        const messageText = input.value.trim();
+        
+        if (!messageText || !currentChatId) return;
+
+        try {
+            await connection.invoke("SendMessage", currentChatId, messageText);
+            input.value = '';
+        } catch (error) {
+            console.error('Error sending message:', error);
+            alert('Failed to send message');
+        }
+    });
+
+    // Typing indicator
+    document.getElementById('messageInput').addEventListener('input', function() {
+        if (currentChatId && connection) {
+            connection.invoke("TypingIndicator", currentChatId, true);
+            
+            clearTimeout(typingTimeout);
+            typingTimeout = setTimeout(() => {
+                connection.invoke("TypingIndicator", currentChatId, false);
+            }, 2000);
+        }
+    });
+
+    // Helper functions
+    function scrollToBottom() {
+        const container = document.getElementById('messagesContainer');
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', async function() {
+        await initSignalR();
+        await loadConversations();
+        
+        // Get current user ID (you may need to adjust this based on your auth setup)
+        // currentUserId = ...; // Set from your auth system
+    });
+</script>
+}
+
+<style>
+    .list-group-item:hover {
+        background-color: #f8f9fa;
+    }
+    
+    #messagesContainer::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    #messagesContainer::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    #messagesContainer::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+    
+    #messagesContainer::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>

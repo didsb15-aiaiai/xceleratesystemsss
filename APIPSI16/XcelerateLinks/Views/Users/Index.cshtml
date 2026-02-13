@@ -1,0 +1,51 @@
+@model UserFilterViewModel
+@{
+    ViewData["Title"] = "Utilizadores";
+}
+
+<h2 class="mb-3">Utilizadores</h2>
+
+<form asp-action="Index" method="get" class="row g-3 align-items-end mb-4">
+    <div class="col-md-4">
+        <label asp-for="JobPreference" class="form-label">Preferência de trabalho (ID)</label>
+        <input asp-for="JobPreference" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Nationality" class="form-label">Nacionalidade (ID)</label>
+        <input asp-for="Nationality" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Limpar</a>
+    </div>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+{
+    <div class="alert alert-warning">@Model.ErrorMessage</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.Name</td>
+            <td>@user.Email</td>
+            <td>@user.Role</td>
+            <td class="text-end">
+                <a asp-action="Details" asp-route-id="@user.UserId" class="btn btn-sm btn-outline-secondary">Detalhes</a>
+                <a asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-sm btn-outline-primary">Editar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

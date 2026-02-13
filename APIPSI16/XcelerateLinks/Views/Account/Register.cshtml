@@ -1,0 +1,52 @@
+﻿@model XcelerateLinks.Models.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Criar conta";
+}
+
+<section class="login-hero login-centered">
+    <div class="hero-right">
+        <div class="login-card">
+            <h3>Criar nova conta</h3>
+            <form asp-action="Register" method="post" class="mt-2">
+                @Html.AntiForgeryToken()
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Nome</label>
+                    <input asp-for="Name" class="form-control" placeholder="Seu nome completo" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" placeholder="email@exemplo.com" />
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Username" class="form-label">Utilizador</label>
+                    <input asp-for="Username" class="form-control" placeholder="nome de utilizador" />
+                    <span asp-validation-for="Username" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Senha</label>
+                    <input asp-for="Password" class="form-control" placeholder="senha" type="password" />
+                    <span asp-validation-for="Password" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="form-label">Confirmar senha</label>
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="repita a senha" type="password" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                </div>
+
+                <button type="submit" class="login-btn">Criar conta</button>
+                <a class="secondary-link" href="/Account/Login">Já tem conta? Entrar</a>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

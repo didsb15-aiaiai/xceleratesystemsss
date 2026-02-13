@@ -1,0 +1,698 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\data\\xcleratesystemslinks_sampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\data\\xcleratesystemslinks_sampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\applications\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\applications\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\applications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\applications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\applications\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\applications\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\xcleratesystemslinkssampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\xcleratesystemslinkssampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\applications\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\applications\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\models\\viewmodels\\applicationcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\models\\viewmodels\\applicationcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\dtos\\applydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\dtos\\applydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\profileeducations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\profileeducations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\profileexperiencescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\profileexperiencescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\interviewroundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\interviewroundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\postreactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\postreactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\postcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\postcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\userskillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\userskillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\controllers\\connectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\controllers\\connectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\dtos\\scheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\dtos\\scheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\dtos\\updatestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\dtos\\updatestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\dtos\\createconnectionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\dtos\\createconnectionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\apipsi16\\models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE35ADD-18C5-4AD4-AC92-65600958575C}|APIPSI16\\APIPSI16.csproj|solutionrelative:apipsi16\\models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\home\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\home\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|c:\\users\\i230102\\downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\apipsi16v2\\apipsi16\\xceleratelinks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5687B6D5-CE49-4B86-B64A-5BBD2CDC5E00}|XcelerateLinks\\XcelerateLinks.csproj|solutionrelative:xceleratelinks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\User.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\User.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA2wCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:18:20.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Services\\TokenService.cs",
+              "RelativeToolTip": "APIPSI16\\Services\\TokenService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:18:02.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "APIPSI16\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\appsettings.Development.json",
+              "RelativeToolTip": "APIPSI16\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-12T16:14:26.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAwwEgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:06:30.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "XcelerateLinks\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAAMkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:13:07.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "xcleratesystemslinks_SampleDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Data\\xcleratesystemslinks_SampleDBContext.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Data\\xcleratesystemslinks_SampleDBContext.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Data\\xcleratesystemslinks_SampleDBContext.cs",
+              "RelativeToolTip": "APIPSI16\\Data\\xcleratesystemslinks_SampleDBContext.cs",
+              "ViewState": "AgIAANIBAAAAAAAAAAAUwOABAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:20:10.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JobApplication.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\JobApplication.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\JobApplication.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\JobApplication.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\JobApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:18:26.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Program.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Program.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Program.cs",
+              "RelativeToolTip": "XcelerateLinks\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:13:07.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Program.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Program.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Program.cs",
+              "RelativeToolTip": "APIPSI16\\Program.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAAAPUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:12:45.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Details.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Applications\\Details.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Details.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Applications\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T15:20:07.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JobApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\JobApplicationsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\JobApplicationsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\JobApplicationsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\JobApplicationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:46:13.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Create.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Applications\\Create.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Create.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Applications\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T15:31:31.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Index.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Applications\\Index.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Index.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Applications\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowCIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T15:20:01.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\wwwroot\\css\\Login.css",
+              "RelativeDocumentMoniker": "XcelerateLinks\\wwwroot\\css\\Login.css",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\wwwroot\\css\\Login.css",
+              "RelativeToolTip": "XcelerateLinks\\wwwroot\\css\\Login.css",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAKMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-10T15:07:03.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAcwI4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T14:53:48.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\ApplicationsController.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Controllers\\ApplicationsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\ApplicationsController.cs",
+              "RelativeToolTip": "XcelerateLinks\\Controllers\\ApplicationsController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswJMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:16:01.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "XcleratesystemslinksSampleDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\XcleratesystemslinksSampleDbContext.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\XcleratesystemslinksSampleDbContext.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\XcleratesystemslinksSampleDbContext.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\XcleratesystemslinksSampleDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:35:54.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Delete.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Applications\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Applications\\Delete.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Applications\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T15:19:54.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Models\\ViewModels\\ApplicationCreateViewModel.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Models\\ViewModels\\ApplicationCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Models\\ViewModels\\ApplicationCreateViewModel.cs",
+              "RelativeToolTip": "XcelerateLinks\\Models\\ViewModels\\ApplicationCreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:19:40.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplyDto.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\ApplyDto.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\DTOs\\ApplyDto.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\ApplyDto.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\DTOs\\ApplyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:51:11.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\PostsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\PostsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwBkAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:58:29.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProfileEducations.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ProfileEducations.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\ProfileEducations.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ProfileEducations.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\ProfileEducations.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:08:24.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProfileExperiencesController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ProfileExperiencesController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\ProfileExperiencesController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ProfileExperiencesController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\ProfileExperiencesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:03:07.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SkillsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\SkillsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\SkillsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\SkillsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\SkillsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA2wCkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:55:50.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InterviewRoundsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\InterviewRoundsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\InterviewRoundsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\InterviewRoundsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\InterviewRoundsController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwCkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:02:12.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\NotificationsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\NotificationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:01:00.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PostReactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostReactionsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\PostReactionsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostReactionsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\PostReactionsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:00:15.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PostCommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostCommentsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\PostCommentsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\PostCommentsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\PostCommentsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:59:12.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserSkillsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\UserSkillsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\UserSkillsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\UserSkillsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\UserSkillsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:56:18.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ConnectionsController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ConnectionsController.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Controllers\\ConnectionsController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Controllers\\ConnectionsController.cs",
+              "RelativeToolTip": "APIPSI16\\Controllers\\ConnectionsController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAA4wCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:52:59.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ScheduleDto.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\ScheduleDto.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\DTOs\\ScheduleDto.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\ScheduleDto.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\DTOs\\ScheduleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:52:15.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateConnectionRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\CreateConnectionRequestDto.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\DTOs\\CreateConnectionRequestDto.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\CreateConnectionRequestDto.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\DTOs\\CreateConnectionRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:51:07.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UpdateStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\UpdateStatusDto.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\DTOs\\UpdateStatusDto.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\UpdateStatusDto.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\DTOs\\UpdateStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:51:05.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "APIPSI16\\Models\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\APIPSI16\\Models\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "APIPSI16\\Models\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:49:19.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Home\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Home\\AdminIndex.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Home\\AdminIndex.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Home\\AdminIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T16:10:31.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T16:12:33.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CompaniesController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\CompaniesController.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Controllers\\CompaniesController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\CompaniesController.cs",
+              "RelativeToolTip": "XcelerateLinks\\Controllers\\CompaniesController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:06:17.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "XcelerateLinks\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywCEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:04:17.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "XcelerateLinks\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "XcelerateLinks\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwFsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-10T14:50:03.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "XcelerateLinks\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\I230102\\Downloads\\xceleratelinks2\\xceleratelinks22-copilot-add-opportunity-features\\APIPSI16v2\\APIPSI16\\XcelerateLinks\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "XcelerateLinks\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T14:46:52.264Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

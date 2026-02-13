@@ -1,0 +1,44 @@
+@model ApplicationCreateViewModel
+@{
+    ViewData["Title"] = "Nova candidatura";
+}
+
+<h2 class="mb-3">Nova candidatura</h2>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="Application.Name" class="form-label">Nome</label>
+        <input asp-for="Application.Name" class="form-control" />
+        <span asp-validation-for="Application.Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Application.OpportunityId" class="form-label">Oportunidade</label>
+        <select asp-for="Application.OpportunityId" class="form-select">
+            <option value="">Selecione</option>
+            @foreach (var opportunity in Model.Opportunities)
+            {
+                <option value="@opportunity.Id">@opportunity.Title</option>
+            }
+        </select>
+        <span asp-validation-for="Application.OpportunityId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Application.UserId" class="form-label">Utilizador (ID)</label>
+        <input asp-for="Application.UserId" class="form-control" />
+        <span asp-validation-for="Application.UserId" class="text-danger"></span>
+        <div class="form-text">Deixe vazio para usar o utilizador autenticado.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace APIPSI16.Models;
+
+public partial class JobApplication
+{
+    public int JobApplicationId { get; set; }
+
+    public int OpportunityId { get; set; }
+
+    public int UserId { get; set; }
+
+    public byte Status { get; set; }
+
+    public byte? Stage { get; set; }
+
+    public DateTime AppliedAt { get; set; }
+
+    public DateTime? UpdatedAt { get; set; }
+
+    public string? Name { get; set; }
+
+    public virtual ICollection<InterviewRound> InterviewRounds { get; set; } = new List<InterviewRound>();
+
+    public virtual Opportunity Opportunity { get; set; } = null!;
+
+    public virtual User User { get; set; } = null!;
+}

@@ -1,0 +1,22 @@
+@model Company
+@{
+    ViewData["Title"] = "Detalhes da empresa";
+}
+
+<h2 class="mb-3">Detalhes da empresa</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Nome</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Indústria</dt>
+    <dd class="col-sm-9">@Model.Industry</dd>
+
+    <dt class="col-sm-3">Localização</dt>
+    <dd class="col-sm-9">@Model.Location</dd>
+</dl>
+
+<div class="d-flex gap-2">
+    <a asp-action="Edit" asp-route-id="@Model.CompanyId" class="btn btn-outline-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+</div>
