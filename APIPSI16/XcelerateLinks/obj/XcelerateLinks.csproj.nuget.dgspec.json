@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/APIPSI16.csproj",
         "projectName": "APIPSI16",
         "projectPath": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/APIPSI16.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/home/runner/work/xceleratesystemsss/.codeql-scratch/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -88,6 +88,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -106,7 +120,7 @@
         "projectUniqueName": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/XcelerateLinks.csproj",
         "projectName": "XcelerateLinks",
         "projectPath": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/XcelerateLinks.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/home/runner/work/xceleratesystemsss/.codeql-scratch/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/XcelerateLinks/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -160,6 +174,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

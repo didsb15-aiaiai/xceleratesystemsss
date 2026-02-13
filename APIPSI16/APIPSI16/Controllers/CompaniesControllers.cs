@@ -1,4 +1,5 @@
 ﻿using APIPSI16.Data;
+using APIPSI16.Filters;
 using APIPSI16.Models;
 using APIPSI16.Models.DTOs;
 using APIPSI16.Services;
@@ -99,7 +100,8 @@ namespace APIPSI16.Controllers
         // Upload company logo
         [HttpPost("{id}/upload-logo")]
         [Authorize(Roles = "0,2")]
-        public async Task<IActionResult> UploadCompanyLogo(int id, [FromForm] IFormFile file)
+        [SwaggerFileUpload]
+        public async Task<IActionResult> UploadCompanyLogo(int id, IFormFile file)
         {
             var currentUserId = GetCurrentUserId();
             var userRole = GetCurrentUserRole();

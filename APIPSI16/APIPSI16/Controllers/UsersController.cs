@@ -1,4 +1,5 @@
 ﻿using APIPSI16.Data;
+using APIPSI16.Filters;
 using APIPSI16.Models;
 using APIPSI16.Models.DTOs;
 using APIPSI16.Services;
@@ -141,7 +142,8 @@ namespace APIPSI16.Controllers
         // POST: api/Users/5/upload-picture
         // Upload profile picture for a user
         [HttpPost("{id}/upload-picture")]
-        public async Task<IActionResult> UploadProfilePicture(int id, [FromForm] IFormFile file)
+        [SwaggerFileUpload]
+        public async Task<IActionResult> UploadProfilePicture(int id, IFormFile file)
         {
             var currentUserId = GetCurrentUserId();
             var userRole = GetCurrentUserRole();
