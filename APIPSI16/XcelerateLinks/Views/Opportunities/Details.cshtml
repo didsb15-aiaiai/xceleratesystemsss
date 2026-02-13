@@ -1,0 +1,23 @@
+@model Opportunity
+@{
+    ViewData["Title"] = "Detalhes da oportunidade";
+}
+
+<h2 class="mb-3">Detalhes da oportunidade</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Título</dt>
+    <dd class="col-sm-9">@Model.Title</dd>
+
+    <dt class="col-sm-3">Empresa</dt>
+    <dd class="col-sm-9">@((Model.Company?.Name ?? Model.CompanyId?.ToString()) ?? "-")</dd>
+
+    <dt class="col-sm-3">Criador</dt>
+    <dd class="col-sm-9">@Model.CreatorId</dd>
+</dl>
+
+<div class="d-flex gap-2">
+    <a asp-controller="Applications" asp-action="Create" asp-route-opportunityId="@Model.Id" class="btn btn-primary">Candidatar</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+</div>

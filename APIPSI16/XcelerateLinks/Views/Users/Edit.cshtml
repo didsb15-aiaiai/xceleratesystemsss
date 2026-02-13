@@ -1,0 +1,68 @@
+@model User
+@{
+    ViewData["Title"] = "Editar utilizador";
+}
+
+<h2 class="mb-3">Editar utilizador</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="UserId" />
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Nome</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PhoneNumber" class="form-label">Telefone</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Nationality" class="form-label">Nacionalidade (ID)</label>
+        <input asp-for="Nationality" class="form-control" />
+        <span asp-validation-for="Nationality" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="JobPreference" class="form-label">Preferência de trabalho (ID)</label>
+        <input asp-for="JobPreference" class="form-control" />
+        <span asp-validation-for="JobPreference" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ProfileBio" class="form-label">Perfil</label>
+        <textarea asp-for="ProfileBio" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="ProfileBio" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DoB" class="form-label">Data de nascimento</label>
+        <input asp-for="DoB" type="date" class="form-control" />
+        <span asp-validation-for="DoB" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Role" class="form-label">Role</label>
+        <input asp-for="Role" class="form-control" />
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <a asp-action="Details" asp-route-id="@Model.UserId" class="btn btn-outline-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

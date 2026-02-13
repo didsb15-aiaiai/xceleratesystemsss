@@ -1,0 +1,22 @@
+@model JobApplication
+@{
+    ViewData["Title"] = "Detalhes da candidatura";
+}
+
+<h2 class="mb-3">Detalhes da candidatura</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Nome</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Oportunidade</dt>
+    <dd class="col-sm-9">@((Model.Opportunity?.Title ?? Model.OpportunityId.ToString()) ?? "-")</dd>
+
+    <dt class="col-sm-3">Utilizador</dt>
+    <dd class="col-sm-9">@((Model.User?.Name ?? Model.UserId.ToString()) ?? "-")</dd>
+</dl>
+
+<div class="d-flex gap-2">
+    <a asp-action="Delete" asp-route-id="@Model.JobApplicationId" class="btn btn-outline-danger">Eliminar</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+</div>

@@ -1,0 +1,227 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #2f6fd6;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* ===============================
+   COLOR TOKENS (ONLY CHANGE)
+================================ */
+:root {
+    /* brand */
+    --accent-strong: #2f6fd6; /* muted blue */
+    --accent: #2fb7a6; /* muted teal */
+    /* surfaces */
+    --surface-dark: #14171b;
+    --surface-dark-muted: #101316;
+    --surface-light: #ffffff;
+    --surface-light-muted: #f1f3f6;
+}
+
+/* ===============================
+   THEMES
+================================ */
+body.dark-theme {
+    background: #0b0c0d;
+    color: #e6e6e6;
+    --surface: var(--surface-dark);
+    --surface-muted: var(--surface-dark-muted);
+    --text-muted: #b4b7bd;
+    --border: rgba(255,255,255,0.08);
+}
+
+body.light-theme {
+    background: #f6f7fb;
+    color: #1b1f24;
+    --surface: var(--surface-light);
+    --surface-muted: var(--surface-light-muted);
+    --text-muted: #5f6773;
+    --border: rgba(12,18,28,0.08);
+}
+
+/* ===============================
+   HEADER
+================================ */
+.site-header {
+    background: linear-gradient( 90deg, #2f6fd6 0%, #2fb7a6 100% );
+    color: #fff;
+}
+
+body.light-theme .site-header {
+    background: #000;
+    color: #fff;
+}
+
+/* ===============================
+   HERO
+================================ */
+.home-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0 2rem;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(47,183,166,0.15);
+    color: var(--accent-strong);
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin: 1rem 0 0.8rem;
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.hero-metrics {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.metric-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+body.light-theme .metric-value {
+    color: #245bb5; /* darker blue for readability */
+}
+
+.metric-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ===============================
+   CARDS (UNCHANGED LAYOUT)
+================================ */
+.hero-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.6rem;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.8rem;
+}
+
+    .hero-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0.9rem;
+        border-radius: 12px;
+        background: var(--surface-muted);
+        border: 1px solid var(--border);
+        font-size: 0.95rem;
+    }
+
+.hero-list-value {
+    font-weight: 600;
+}
+
+/* ===============================
+   FEATURES
+================================ */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.4rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    height: 100%;
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(47,183,166,0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.feature-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
