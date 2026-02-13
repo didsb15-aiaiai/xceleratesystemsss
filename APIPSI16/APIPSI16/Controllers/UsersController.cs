@@ -1,5 +1,7 @@
 ﻿using APIPSI16.Data;
 using APIPSI16.Models;
+using APIPSI16.Models.DTOs;
+using APIPSI16.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +15,12 @@ namespace APIPSI16.Controllers
     public class UsersController : ControllerBase
     {
         private readonly xcleratesystemslinks_SampleDBContext _context;
+        private readonly IFileStorageService _fileStorage;
 
-        public UsersController(xcleratesystemslinks_SampleDBContext context)
+        public UsersController(xcleratesystemslinks_SampleDBContext context, IFileStorageService fileStorage)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
+            _fileStorage = fileStorage ?? throw new ArgumentNullException(nameof(fileStorage));
         }
 
         // GET: api/Users
@@ -68,6 +72,108 @@ namespace APIPSI16.Controllers
                 return Forbid();
 
             return Ok(user);
+        }
+
+        // GET: api/Users/5/profile
+        // Get complete user profile with skills, experiences, and educations
+        [HttpGet("{id}/profile")]
+        public async Task<IActionResult> GetUserProfile(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return NotFound();
+
+            var skills = await _context.UserSkills
+                .Where(us => us.UserId == id)
+                .Include(us => us.Skill)
+                .Select(us => new SkillDTO
+                {
+                    SkillId = us.SkillId,
+                    Name = us.Skill.Name,
+                    EndorsementCount = _context.SkillEndorsements.Count(se => se.UserSkillId == us.UserSkillId)
+                })
+                .ToListAsync();
+
+            var experiences = await _context.ProfileExperiences
+                .Where(pe => pe.UserId == id)
+                .Select(pe => new ProfileExperienceDTO
+                {
+                    ExperienceId = pe.ExperienceId,
+                    JobTitle = pe.Title,
+                    CompanyName = pe.CompanyName,
+                    StartDate = pe.StartDate,
+                    EndDate = pe.EndDate,
+                    Description = pe.Description
+                })
+                .ToListAsync();
+
+            var educations = await _context.ProfileEducations
+                .Where(pe => pe.UserId == id)
+                .Select(pe => new ProfileEducationDTO
+                {
+                    EducationId = pe.EducationId,
+                    Institution = pe.School,
+                    Degree = pe.Degree,
+                    FieldOfStudy = pe.FieldOfStudy,
+                    StartDate = pe.StartYear.HasValue ? new DateOnly(pe.StartYear.Value, 1, 1) : (DateOnly?)null,
+                    EndDate = pe.EndYear.HasValue ? new DateOnly(pe.EndYear.Value, 1, 1) : (DateOnly?)null
+                })
+                .ToListAsync();
+
+            var profileDto = new UserProfileDTO
+            {
+                UserId = user.UserId,
+                Name = user.Name,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber,
+                Nationality = user.Nationality,
+                JobPreference = user.JobPreference,
+                ProfileBio = user.ProfileBio,
+                DoB = user.DoB,
+                ProfilePictureUrl = user.ProfilePictureUrl,
+                Skills = skills,
+                Experiences = experiences,
+                Educations = educations
+            };
+
+            return Ok(profileDto);
+        }
+
+        // POST: api/Users/5/upload-picture
+        // Upload profile picture for a user
+        [HttpPost("{id}/upload-picture")]
+        public async Task<IActionResult> UploadProfilePicture(int id, [FromForm] IFormFile file)
+        {
+            var currentUserId = GetCurrentUserId();
+            var userRole = GetCurrentUserRole();
+
+            if (userRole != "0" && currentUserId != id)
+                return Forbid();
+
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return NotFound();
+
+            if (!_fileStorage.ValidateImageFile(file, out var errorMessage))
+                return BadRequest(new { message = errorMessage });
+
+            try
+            {
+                // Delete old profile picture if exists
+                if (!string.IsNullOrEmpty(user.ProfilePictureUrl))
+                {
+                    await _fileStorage.DeleteFileAsync(user.ProfilePictureUrl);
+                }
+
+                // Save new profile picture
+                var fileUrl = await _fileStorage.SaveFileAsync(file, "profiles");
+                user.ProfilePictureUrl = fileUrl;
+                await _context.SaveChangesAsync();
+
+                return Ok(new { success = true, fileUrl = fileUrl, message = "Profile picture uploaded successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = $"Error uploading file: {ex.Message}" });
+            }
         }
 
         // POST: api/Users

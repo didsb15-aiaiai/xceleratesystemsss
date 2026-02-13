@@ -13,6 +13,8 @@ public partial class JobApplication
 
     public byte Status { get; set; }
 
+    public byte? Stage { get; set; }
+
     public DateTime AppliedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }

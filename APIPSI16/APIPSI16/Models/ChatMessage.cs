@@ -15,6 +15,10 @@ public partial class ChatMessage
 
     public DateTime? CreatedAt { get; set; }
 
+    public DateTime? DeliveredAt { get; set; }
+
+    public DateTime? ReadAt { get; set; }
+
     public virtual Chat Chat { get; set; } = null!;
 
     public virtual User SenderUser { get; set; } = null!;

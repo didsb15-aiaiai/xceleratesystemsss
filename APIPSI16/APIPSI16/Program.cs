@@ -110,6 +110,7 @@ var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "xcelerate-links-clie
 // ---- Register services ----
 builder.Services.AddSingleton<ITokenService, TokenService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+builder.Services.AddScoped<IFileStorageService, FileStorageService>();
 
 // ---- Authentication (JWT Bearer) ----
 builder.Services.AddAuthentication(options =>
@@ -232,6 +233,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles(); // Enable serving static files
 
 app.UseCors("AllowMvcFrontend");
 

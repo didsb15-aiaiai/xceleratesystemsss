@@ -17,6 +17,14 @@ public partial class PostComment
 
     public DateTime CreatedAt { get; set; }
 
+    public bool IsModerated { get; set; }
+
+    public int? ModeratedBy { get; set; }
+
+    public DateTime? ModeratedAt { get; set; }
+
+    public bool IsDeleted { get; set; }
+
     public virtual ICollection<PostComment> InverseParentComment { get; set; } = new List<PostComment>();
 
     public virtual PostComment? ParentComment { get; set; }

@@ -21,6 +21,16 @@ public partial class Opportunity
 
     public byte? RemoteOption { get; set; }
 
+    public string? Description { get; set; }
+
+    public string? Duration { get; set; }
+
+    public decimal? CompensationMin { get; set; }
+
+    public decimal? CompensationMax { get; set; }
+
+    public string? CompensationCurrency { get; set; }
+
     public virtual Company? Company { get; set; }
 
     public virtual User? Creator { get; set; }

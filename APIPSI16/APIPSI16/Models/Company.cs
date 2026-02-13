@@ -15,6 +15,10 @@ public partial class Company
 
     public DateTime? CreatedAt { get; set; }
 
+    public string? CompanyLogoUrl { get; set; }
+
+    public string? Description { get; set; }
+
     public virtual ICollection<CompanyMember> CompanyMembers { get; set; } = new List<CompanyMember>();
 
     public virtual ICollection<EmployerCandidateHistory> EmployerCandidateHistories { get; set; } = new List<EmployerCandidateHistory>();

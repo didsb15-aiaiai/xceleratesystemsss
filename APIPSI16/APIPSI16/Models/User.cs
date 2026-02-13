@@ -25,6 +25,8 @@ public partial class User
 
     public string? PasswordHash { get; set; }
 
+    public string? ProfilePictureUrl { get; set; }
+
     public virtual ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
 
     public virtual ICollection<ChatMessage> ChatMessages { get; set; } = new List<ChatMessage>();
