@@ -59,6 +59,16 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIPSI16 API", Version = "v1" });
 
+    // Map IFormFile to handle file uploads properly
+    c.MapType<IFormFile>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "binary"
+    });
+
+    // Register file upload operation filter
+    c.OperationFilter<APIPSI16.Filters.FileUploadOperation>();
+
     // Swagger auth configuration
     var securityScheme = new OpenApiSecurityScheme
     {

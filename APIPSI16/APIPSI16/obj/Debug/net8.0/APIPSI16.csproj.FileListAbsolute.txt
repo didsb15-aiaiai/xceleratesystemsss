@@ -140,10 +140,11 @@ C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportun
 C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportunity-features/APIPSI16v2/APIPSI16/APIPSI16/obj/Debug/net8.0/APIPSI16.genruntimeconfig.cache
 C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportunity-features/APIPSI16v2/APIPSI16/APIPSI16/obj/Debug/net8.0/ref/APIPSI16.dll
 C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportunity-features/APIPSI16v2/APIPSI16/APIPSI16/obj/Debug/net8.0/staticwebassets.upToDateCheck.txt
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/appsettings.Development.json
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/appsettings.json
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/efpt.config.json
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/libman.json
-/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/appsettings.Development.json
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/APIPSI16.staticwebassets.runtime.json
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/APIPSI16.staticwebassets.endpoints.json
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/APIPSI16
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/APIPSI16.deps.json
@@ -178,6 +179,7 @@ C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportun
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Mono.TextTemplating.dll
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Newtonsoft.Json.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -191,6 +193,7 @@ C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportun
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Drawing.Common.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Memory.Data.dll
+/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Runtime.Caching.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Security.Permissions.dll
@@ -283,6 +286,3 @@ C:/Users/I230102/Downloads/xceleratelinks2/xceleratelinks22-copilot-add-opportun
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/obj/Debug/net8.0/APIPSI16.pdb
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/obj/Debug/net8.0/APIPSI16.genruntimeconfig.cache
 /home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/obj/Debug/net8.0/ref/APIPSI16.dll
-/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/APIPSI16.staticwebassets.runtime.json
-/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/Newtonsoft.Json.dll
-/home/runner/work/xceleratesystemsss/xceleratesystemsss/APIPSI16/APIPSI16/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll
